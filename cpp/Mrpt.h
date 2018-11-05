@@ -960,7 +960,7 @@ class Mrpt {
           for(int v = 1; v <= votes_index; ++v) {
             double qt = get_query_time(t, d, v);
             query_time(v - 1, t - 1) = qt;
-            Parameters par = {t, d, v, qt, get_recall(t, d, v)};
+            Parameters par {n_trees = t, depth = d, votes = v, estimated_qtime = qt, estimated_recall = get_recall(t, d, v)};
             pars.insert(par);
           }
         }
