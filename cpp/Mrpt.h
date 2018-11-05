@@ -12,6 +12,7 @@
 #include <map>
 #include <set>
 #include <fstream>
+#include <iostream>
 
 #include <Eigen/Dense>
 #include <Eigen/SparseCore>
