@@ -140,7 +140,7 @@ static int Mrpt_init(mrptIndex *self, PyObject *args) {
 }
 
 static PyObject *build(mrptIndex *self) {
-    self->ptr->grow();
+    //self->ptr->grow();
     Py_RETURN_NONE;
 }
 
